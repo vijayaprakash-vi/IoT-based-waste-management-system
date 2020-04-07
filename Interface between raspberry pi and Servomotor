@@ -12,7 +12,7 @@ const int servo = 18;
 const int WaterSensor = 24;
 const int buzzer = 12;
 uint8_t LastStatus = 1;
-uint8_t EmergencyStop= 21;
+
 
 
 int main(void) // main program start here
