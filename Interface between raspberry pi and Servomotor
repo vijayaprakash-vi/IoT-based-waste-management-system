@@ -21,7 +21,6 @@ int main(void) // main program start here
 	wiringPiSetupGpio(); // Setup I2C communication
 	pinMode(led, OUTPUT); // 
 	pinMode(buzzer, OUTPUT); 	
-	pullUpDnControl(EmergencyStop,PUD_DOWN);
 	pullUpDnControl(WaterSensor,PUD_UP);
   	pinMode (servo, PWM_OUTPUT) ;
   	pwmSetMode (PWM_MODE_MS);
@@ -46,9 +45,9 @@ int main(void) // main program start here
    	   delay(1000); // again delay
 	}
 
-	if(digitalRead(EmergencyStop))
-	{
+	
+	
 	   break; // break statement end the loop.
-	}
+	
 }    // end of while loop
 }
